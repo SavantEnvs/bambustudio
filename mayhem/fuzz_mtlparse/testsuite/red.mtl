@@ -1,0 +1,14 @@
+newmtl red
+Ns 96.078431
+Ka 1.0 1.0 1.0
+Kd 0.8 0.0 0.0
+Ks 0.5 0.5 0.5
+Ke 0.0 0.0 0.0
+Ni 1.45
+d 1.0
+illum 2
+map_Kd tex.png
+newmtl blue
+Kd 0.0 0.0 0.8
+Tr 0.25
+Tf 1 1 1

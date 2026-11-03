@@ -1,0 +1,9 @@
+project: savantenvs/bambustudio
+target: fuzz_stl_load
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_stl_load/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_stl_load
+    libfuzzer: true
+    timeout: 20

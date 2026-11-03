@@ -1,0 +1,9 @@
+project: savantenvs/bambustudio
+target: fuzz_mtlparse
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_mtlparse/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_mtlparse
+    libfuzzer: true
+    timeout: 20

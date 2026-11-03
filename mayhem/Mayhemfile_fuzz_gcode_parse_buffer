@@ -1,0 +1,9 @@
+project: savantenvs/bambustudio
+target: fuzz_gcode_parse_buffer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_gcode_parse_buffer/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_gcode_parse_buffer
+    libfuzzer: true
+    timeout: 20
